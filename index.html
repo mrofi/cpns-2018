@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index of : CPNS 2018 / </title>
+    <title>Repository Pengumuman CPNS 2018 /  (Updated)</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.29/dist/sweetalert2.min.css">
     <style>
@@ -22,18 +22,20 @@
         }
 
         .container {
+            padding-top: 40px;
             width: 95%;
             max-width: 600px;
             margin: 0 auto;
         }
 
         .title {
-            margin-top: 40px;
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 500;
+            margin-bottom: 20px;
         }
 
         .title a {
+            font-size: 16px;
             border-bottom: 1px solid #aaa;
             padding-bottom: 5px;
         }
@@ -84,6 +86,11 @@
             text-decoration: underline;
         }
 
+        .grey {
+            color: #777;
+            font-style: italic;
+        }
+
 /*        @media screen and (min-width: 40em) {
             .title {
                 font-size: 16px;
@@ -94,13 +101,14 @@
 <body>
     <div class="container">
         <h1 class="title">
-            Index of :
+            Repository Pengumuman CPNS 2018 (Updated)
+        </h1>
+        <h1 class="title">
             <a href="/">CPNS 2018</a> /         </h1>
+        <small class="grey">Last update : <span id="last-update"></span></small>
+        <hr>
         <ul class="list">
                             <li>
-                    <a href="/Buku Petunjuk Pendaftaran CPNS 2018.pdf">Buku Petunjuk Pendaftaran CPNS 2018.pdf</a>
-                </li>
-                                            <li>
                     <a href="/Kementerian_Lembaga">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
                             <path d="M20 6h-8l-2-2h-6c-1.105 0-1.99 0.895-1.99 2l-0.010 12c0 1.105 0.895 2 2 2h16c1.105 0 2-0.895 2-2v-10c0-1.105-0.895-2-2-2zM20 18h-16v-10h16v10z" fill="#444444"></path>
@@ -108,10 +116,7 @@
                         Kementerian_Lembaga/
                     </a>
                 </li>
-                                            <li>
-                    <a href="/PERMENPAN No 36 Tahun 2018.pdf">PERMENPAN No 36 Tahun 2018.pdf</a>
-                </li>
-                                            <li>
+                                <li>
                     <a href="/Pemda">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
                             <path d="M20 6h-8l-2-2h-6c-1.105 0-1.99 0.895-1.99 2l-0.010 12c0 1.105 0.895 2 2 2h16c1.105 0 2-0.895 2-2v-10c0-1.105-0.895-2-2-2zM20 18h-16v-10h16v10z" fill="#444444"></path>
@@ -119,10 +124,16 @@
                         Pemda/
                     </a>
                 </li>
-                                            <li>
+                                <li>
+                    <a href="/Buku Petunjuk Pendaftaran CPNS 2018.pdf">Buku Petunjuk Pendaftaran CPNS 2018.pdf</a>
+                </li>
+                                <li>
+                    <a href="/PERMENPAN No 36 Tahun 2018.pdf">PERMENPAN No 36 Tahun 2018.pdf</a>
+                </li>
+                                <li>
                     <a href="/Rincian Formasi CPNS 2018.pdf">Rincian Formasi CPNS 2018.pdf</a>
                 </li>
-                                    </ul>
+                        </ul>
         <div class="footer">
             Managed by : <a href="https://mokh.rofiudin.com">mokh.rofiudin.com</a>. | Any inquiry : <a href="mailto:mokh@rofiudin.com">mokh@rofiudin.com</a>
         </div>
@@ -146,6 +157,11 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-110568302-1');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/id.js"></script>
+    <script>
+        document.getElementById('last-update').innerHTML = moment('20180921 23:30:00', 'YYYYMMDD h:mm:ss').fromNow();
     </script>
 </body>
 </html>
